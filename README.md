@@ -25,10 +25,7 @@ ported by Vito Rallo (vito.rallo@gmail.com)
 echo "PATH=$PATH:/opt/toolchain/bin" >> ~/.bashrc
 source ~/.bashrc
 
-4) edit config.h and uncomment or be sure that 
-	 #define P21 1 
-and 
-	 #define AARCH64 1 (in case you are compiling with armv8 toolchain)
+4) edit config.h and uncomment or be sure that "#define P21 1" and "#define AARCH64 1" (in case you are compiling with armv8 toolchain) are defined
 
 4) compile dronity, you are now ready to go!
 
@@ -59,7 +56,7 @@ ARE COMMENTED!!!!
 
 4) compile dronity, you are now ready to go!
 
- make CROSS_COMPILE=aarch64-linux-android- CC=aarch64-linux-android-gcc 
+ make CROSS_COMPILE=arm-linux-androideabi- CC=arm-linux-androideabi-gcc
 
 (specify here the type of compiler you want, this example is based on aarch64 compiler for android version 4.9 ndk version 10c from Google)
 

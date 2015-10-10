@@ -12,9 +12,9 @@
 //#define USE_VHOST 1 we don't want to support vhost, not compatible with platform 19
 #define CONFIG_COMPAT 1
 //are you compiling for platform 21 or above? uncomment this
-//#define P21 1
+#define P21 1
 //are you compiling for aarch64 64bit armv8? uncommen this
-//#define AARCH64 1
+#define AARCH64 1
 /* very important, affinity is not supported in android platform <20, depending where you compile, check it */
 //#define AFFINITY_SUPPORT 1
 
