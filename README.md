@@ -1,6 +1,6 @@
 ===========================================================================
 
-Dronity 0.7 experimental build (community edition)
+#Dronity 0.7 experimental build (community edition)
 it's a trinty port to Android, wow!
 
 Android Kernel Fuzzer based and forked from
@@ -13,7 +13,7 @@ ported by Vito Rallo (vito.rallo@gmail.com)
 
 ===========================================================================
 
-Crosscompile Dronity for platform >21 (Android 5.0) and/or AARCH64
+#Crosscompile Dronity for platform >21 (Android 5.0) and/or AARCH64
 
 1) get Android NDK from Google
 2) run make-standalone-toolchain to get a standalone compiler
@@ -26,9 +26,9 @@ echo "PATH=$PATH:/opt/toolchain/bin" >> ~/.bashrc
 source ~/.bashrc
 
 4) edit config.h and uncomment or be sure that 
-#define P21 1 
+	 #define P21 1 
 and 
-#define AARCH64 1 (in case you are compiling with armv8 toolchain)
+	 #define AARCH64 1 (in case you are compiling with armv8 toolchain)
 
 4) compile dronity, you are now ready to go!
 
@@ -38,7 +38,7 @@ and
 
 ============================================================================
 
-Crosscompile Dronity for platform 19 (Android 4.4) and hopefully below (not tested)
+#Crosscompile Dronity for platform 19 (Android 4.4) and hopefully below (not tested)
 
 1) get Android NDK from Google
 2) run make-standalone-toolchain to get a standalone compiler (android_sdk_root/build/tools)
